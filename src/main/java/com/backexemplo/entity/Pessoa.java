@@ -18,7 +18,7 @@ public class Pessoa {
     private int id;
 
     @Column
-    private String name;
+    private String nome;
 
     @Column
     private String sobrenome;
