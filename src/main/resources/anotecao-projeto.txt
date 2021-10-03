@@ -4,6 +4,9 @@ docker run --name exemplo-db -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123 -e MYSQL
 
 docker star exemplo-db
 
+https://www.webtutorial.com.br/como-instalar-o-mysql-usando-o-docker/
+
+https://johnathanfercher.medium.com/mysql-docker-7ff6d50d6cf1
 
 -------
 dentro do banco
