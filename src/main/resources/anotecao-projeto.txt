@@ -1,0 +1,21 @@
+No docker
+
+docker run --name exemplo-db -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123 -e MYSQL_DATABASE=exemplo -e MYSQL_USER=root -e MYSQL_PASSWORD=123 mysql/mysql-server:latest
+
+docker star exemplo-db
+
+
+-------
+dentro do banco
+
+show tables ;
+create table pessoa(
+    id int not null auto_increment primary key ,
+    nome varchar(50),
+    sobrenome varchar(100)
+);
+
+select * from pessoa;
+
+insert into pessoa(nome, sobrenome)VALUES ('alicio', 'da cunha'),
+                                           ('camila', 'da cunha');
