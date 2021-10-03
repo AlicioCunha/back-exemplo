@@ -3,9 +3,7 @@ package com.backexemplo.controller;
 import com.backexemplo.entity.Pessoa;
 import com.backexemplo.service.PessoaService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,7 +15,12 @@ public class PessoaController {
     private PessoaService service;
 
     @GetMapping
-    public List<Pessoa> listar(){
+    public List<Pessoa> listar() {
         return service.listar();
+    }
+
+    @PostMapping
+    public Pessoa salvar(@RequestBody Pessoa p) {
+        return service.add(p);
     }
 }

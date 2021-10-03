@@ -17,4 +17,8 @@ public class PessoaService {
         return repository.findAll();
     }
 
+    public Pessoa add(Pessoa p){
+        return repository.save(p);
+    }
+
 }
